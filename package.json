@@ -1,6 +1,6 @@
 {
   "name": "nuxt-vue-unwrap-element",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "build/nuxt.module.js",
   "module": "build/nuxt.module.mjs",
