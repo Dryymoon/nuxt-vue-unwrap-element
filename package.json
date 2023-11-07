@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-vue-unwrap-element",
+  "version": "1.1.0",
+  "description": "",
+  "main": "build/nuxt.module.js",
+  "module": "build/nuxt.module.mjs",
+  "exports": {
+    ".": {
+      "require": "./build/nuxt.module.js",
+      "import": "./build/nuxt.module.mjs"
+    }
+  },
+  "scripts": {
+    "build": "babel src --no-babelrc --out-dir build --config-file ./.babelrc.cjs --out-file-extension .js; babel src --no-babelrc --out-dir build --config-file ./.babelrc.mjs --out-file-extension .mjs",
+    "build:watch": "nodemon --watch src --exec 'npm run build'"
+  },
+  "author": "Pilipenko Igor @dryymoon",
+  "license": "ISC",
+  "dependencies": {
+    "vue-unwrap-element": "^1.0.14"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/preset-env": "^7.23.2",
+    "nodemon": "^3.0.1"
+  },
+  "peerDependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nuxt": {
+      "optional": true
+    }
+  }
+}
